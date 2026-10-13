@@ -17,6 +17,12 @@ the chip and PWM channel plus a physical-device identity suffix so identical
 chips do not overwrite one another. Moving a device to a different physical
 path can change its identity.
 
+Charts keep that full identity internally but display only the chip and PWM
+channel (for example, `pwmfan_pwm1`). If names collide in the selected history,
+only those channels receive a short identity suffix such as `(128a)`, extended
+when needed to distinguish them. Legends, tooltips, and filtering use the same
+display name; the stored keys and historical values do not change.
+
 The hub stores `stats.pwm` in the existing `system_stats` collection and uses
 the existing transport, subscriptions, retention, and aggregation schedule:
 
