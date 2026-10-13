@@ -216,6 +216,7 @@ func (a *Agent) getSystemStats(cacheTimeMs uint16) system.Stats {
 
 	// fan speeds (Linux-only; sysfs hwmon)
 	a.updateFans(&systemStats)
+	a.updatePWM(&systemStats)
 
 	// GPU data
 	if a.gpuManager != nil {

@@ -281,6 +281,7 @@ func AverageSystemStatsSlice(records []system.Stats) system.Stats {
 	tempCount := float64(0)
 	var fanSums map[string]uint64
 	fanCount := uint64(0)
+	pwmCounts := make(map[string]uint64)
 	zfsPoolCounts := make(map[string]uint64)
 	zfsCapacityCounts := make(map[string]uint64)
 
@@ -395,6 +396,17 @@ func AverageSystemStatsSlice(records []system.Stats) system.Stats {
 			fanCount++
 			for key, value := range stats.Fans {
 				fanSums[key] += uint64(value)
+			}
+		}
+
+		// Accumulate PWM duty cycles
+		if len(stats.PWM) > 0 {
+			if sum.PWM == nil {
+				sum.PWM = make(map[string]float64, len(stats.PWM))
+			}
+			for key, value := range stats.PWM {
+				sum.PWM[key] += value
+				pwmCounts[key]++
 			}
 		}
 
@@ -554,6 +566,11 @@ func AverageSystemStatsSlice(records []system.Stats) system.Stats {
 		for key, value := range fanSums {
 			sum.Fans[key] = uint16(value / fanCount)
 		}
+	}
+
+	// Count each PWM channel separately: missing readings are not zero output.
+	for key := range sum.PWM {
+		sum.PWM[key] = twoDecimals(sum.PWM[key] / float64(pwmCounts[key]))
 	}
 
 	// Average extra filesystem stats

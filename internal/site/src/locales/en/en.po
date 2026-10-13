@@ -1029,6 +1029,10 @@ msgstr "Failed to update monitors."
 msgid "Failed: {0}"
 msgstr "Failed: {0}"
 
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "Fan control output (%)"
+msgstr "Fan control output (%)"
+
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
 msgstr "Fans"
@@ -1729,6 +1733,10 @@ msgstr "Public key"
 #: src/components/add-system.tsx
 msgid "Public Key"
 msgstr "Public Key"
+
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "PWM output"
+msgstr "PWM output"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"

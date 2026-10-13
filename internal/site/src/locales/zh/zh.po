@@ -1034,6 +1034,10 @@ msgstr "更新監控失敗。"
 msgid "Failed: {0}"
 msgstr "失敗：{0}"
 
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "Fan control output (%)"
+msgstr "风扇控制输出 (%)"
+
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
 msgstr "風扇"
@@ -1734,6 +1738,10 @@ msgstr "公鑰"
 #: src/components/add-system.tsx
 msgid "Public Key"
 msgstr "公鑰"
+
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "PWM output"
+msgstr "PWM 输出"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"

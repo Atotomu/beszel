@@ -75,6 +75,56 @@ func TestStatsDiskIOTotalAndFansTransport(t *testing.T) {
 	assert.Equal(t, stats.Fans, decoded.Fans)
 }
 
+func TestStatsPWMTransport(t *testing.T) {
+	for name, pwm := range map[string]map[string]float64{
+		"unavailable": nil,
+		"empty":       {},
+		"readings":    {"pwm1": 0, "pwm2": 31.37, "pwm3": 100},
+	} {
+		t.Run(name, func(t *testing.T) {
+			data := CombinedData{Stats: Stats{PWM: pwm}}
+			for encoding, marshal := range map[string]func(any) ([]byte, error){
+				"json_v1": json.Marshal,
+				"json_v2": func(value any) ([]byte, error) { return jsonv2.Marshal(value) },
+			} {
+				t.Run(encoding, func(t *testing.T) {
+					encoded, err := marshal(data)
+					require.NoError(t, err)
+					var payload struct {
+						Stats map[string]json.RawMessage `json:"stats"`
+					}
+					require.NoError(t, json.Unmarshal(encoded, &payload))
+					_, present := payload.Stats["pwm"]
+					assert.Equal(t, len(pwm) > 0, present)
+					var decoded CombinedData
+					require.NoError(t, json.Unmarshal(encoded, &decoded))
+					if len(pwm) == 0 {
+						assert.Nil(t, decoded.Stats.PWM)
+					} else {
+						assert.Equal(t, pwm, decoded.Stats.PWM)
+					}
+				})
+			}
+
+			encoded, err := cbor.Marshal(data)
+			require.NoError(t, err)
+			var decoded CombinedData
+			require.NoError(t, cbor.Unmarshal(encoded, &decoded))
+			var payload map[int]cbor.RawMessage
+			require.NoError(t, cbor.Unmarshal(encoded, &payload))
+			var stats map[int]cbor.RawMessage
+			require.NoError(t, cbor.Unmarshal(payload[0], &stats))
+			_, present := stats[41]
+			assert.Equal(t, len(pwm) > 0, present)
+			if len(pwm) == 0 {
+				assert.Nil(t, decoded.Stats.PWM)
+			} else {
+				assert.Equal(t, pwm, decoded.Stats.PWM)
+			}
+		})
+	}
+}
+
 func TestStatsBatteryNumericArrayUnmarshal(t *testing.T) {
 	var stats Stats
 	require.NoError(t, json.Unmarshal([]byte(`{"bat":[50,4]}`), &stats))
