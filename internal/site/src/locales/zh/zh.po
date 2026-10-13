@@ -1036,7 +1036,7 @@ msgstr "失敗：{0}"
 
 #: src/components/routes/system/charts/pwm-chart.tsx
 msgid "Fan control output (%)"
-msgstr "风扇控制输出 (%)"
+msgstr "風扇控制輸出 (%)"
 
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
@@ -1741,7 +1741,7 @@ msgstr "公鑰"
 
 #: src/components/routes/system/charts/pwm-chart.tsx
 msgid "PWM output"
-msgstr "PWM 输出"
+msgstr "PWM 輸出"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"

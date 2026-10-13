@@ -1034,6 +1034,10 @@ msgstr "Kunne ikke opdatere overvågninger."
 msgid "Failed: {0}"
 msgstr "Mislykkedes: {0}"
 
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "Fan control output (%)"
+msgstr "Styresignal til ventilator (%)"
+
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
 msgstr "Blæsere"
@@ -1734,6 +1738,10 @@ msgstr "Offentlig nøgle"
 #: src/components/add-system.tsx
 msgid "Public Key"
 msgstr "Offentlig nøgle"
+
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "PWM output"
+msgstr "PWM-output"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"

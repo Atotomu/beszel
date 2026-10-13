@@ -1034,6 +1034,10 @@ msgstr "Posodabljanje monitorjev ni uspelo."
 msgid "Failed: {0}"
 msgstr "Neuspešno: {0}"
 
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "Fan control output (%)"
+msgstr "Krmilni izhod ventilatorja (%)"
+
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
 msgstr "Ventilatorji"
@@ -1734,6 +1738,10 @@ msgstr "Javni ključ"
 #: src/components/add-system.tsx
 msgid "Public Key"
 msgstr "Javni ključ"
+
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "PWM output"
+msgstr "Izhod PWM"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"

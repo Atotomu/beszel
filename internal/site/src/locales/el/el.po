@@ -1034,6 +1034,10 @@ msgstr "Η ενημέρωση των monitors απέτυχε."
 msgid "Failed: {0}"
 msgstr "Απέτυχαν: {0}"
 
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "Fan control output (%)"
+msgstr "Έξοδος ελέγχου ανεμιστήρα (%)"
+
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
 msgstr "Ανεμιστήρες"
@@ -1734,6 +1738,10 @@ msgstr "Δημόσιο κλειδί"
 #: src/components/add-system.tsx
 msgid "Public Key"
 msgstr "Δημόσιο κλειδί"
+
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "PWM output"
+msgstr "Έξοδος PWM"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"

@@ -1034,6 +1034,10 @@ msgstr "Gagal memperbarui monitor."
 msgid "Failed: {0}"
 msgstr "Gagal: {0}"
 
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "Fan control output (%)"
+msgstr "Keluaran kontrol kipas (%)"
+
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
 msgstr "Kipas"
@@ -1734,6 +1738,10 @@ msgstr "Kunci publik"
 #: src/components/add-system.tsx
 msgid "Public Key"
 msgstr "Kunci Publik"
+
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "PWM output"
+msgstr "Keluaran PWM"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"

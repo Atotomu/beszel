@@ -1034,6 +1034,10 @@ msgstr "Monitorlarni yangilash amalga oshmadi."
 msgid "Failed: {0}"
 msgstr "Muvaffaqiyatsiz: {0}"
 
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "Fan control output (%)"
+msgstr "Ventilyator boshqaruvi chiqishi (%)"
+
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
 msgstr "Ventilyatorlar"
@@ -1734,6 +1738,10 @@ msgstr "Ochiq kalit"
 #: src/components/add-system.tsx
 msgid "Public Key"
 msgstr "Ochiq kalit"
+
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "PWM output"
+msgstr "PWM chiqishi"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"

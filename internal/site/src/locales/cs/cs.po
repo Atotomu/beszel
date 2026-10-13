@@ -1034,6 +1034,10 @@ msgstr "Nepodařilo se aktualizovat monitory."
 msgid "Failed: {0}"
 msgstr "Neúspěšné: {0}"
 
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "Fan control output (%)"
+msgstr "Řídicí výstup ventilátoru (%)"
+
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
 msgstr "Ventilátory"
@@ -1734,6 +1738,10 @@ msgstr "Veřejný klíč"
 #: src/components/add-system.tsx
 msgid "Public Key"
 msgstr "Veřejný klíč"
+
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "PWM output"
+msgstr "Výstup PWM"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"

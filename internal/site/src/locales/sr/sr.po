@@ -1034,6 +1034,10 @@ msgstr "Ažuriranje monitora nije uspelo."
 msgid "Failed: {0}"
 msgstr "Неуспело: {0}"
 
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "Fan control output (%)"
+msgstr "Управљачки излаз вентилатора (%)"
+
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
 msgstr "Вентилатори"
@@ -1734,6 +1738,10 @@ msgstr "Јавни кључ"
 #: src/components/add-system.tsx
 msgid "Public Key"
 msgstr "Јавни кључ"
+
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "PWM output"
+msgstr "PWM излаз"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"

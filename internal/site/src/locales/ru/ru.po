@@ -1034,6 +1034,10 @@ msgstr "Не удалось обновить мониторы."
 msgid "Failed: {0}"
 msgstr "Неудачно: {0}"
 
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "Fan control output (%)"
+msgstr "Выход управления вентилятором (%)"
+
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
 msgstr "Вентиляторы"
@@ -1734,6 +1738,10 @@ msgstr "Открытый ключ"
 #: src/components/add-system.tsx
 msgid "Public Key"
 msgstr "Публичный ключ"
+
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "PWM output"
+msgstr "Выход PWM"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"

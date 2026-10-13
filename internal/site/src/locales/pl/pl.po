@@ -1034,6 +1034,10 @@ msgstr "Nie udało się zaktualizować monitorów."
 msgid "Failed: {0}"
 msgstr "Nieudane: {0}"
 
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "Fan control output (%)"
+msgstr "Wyjście sterowania wentylatorem (%)"
+
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
 msgstr "Wentylatory"
@@ -1734,6 +1738,10 @@ msgstr "Klucz publiczny"
 #: src/components/add-system.tsx
 msgid "Public Key"
 msgstr "Klucz publiczny"
+
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "PWM output"
+msgstr "Wyjście PWM"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"

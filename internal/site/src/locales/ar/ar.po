@@ -1034,6 +1034,10 @@ msgstr "فشل تحديث أجهزة المراقبة."
 msgid "Failed: {0}"
 msgstr "فشل: {0}"
 
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "Fan control output (%)"
+msgstr "خرج التحكم في المروحة (%)"
+
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
 msgstr "المراوح"
@@ -1734,6 +1738,10 @@ msgstr "المفتاح العام"
 #: src/components/add-system.tsx
 msgid "Public Key"
 msgstr "المفتاح العام"
+
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "PWM output"
+msgstr "خرج PWM"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"

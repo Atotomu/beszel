@@ -1034,6 +1034,10 @@ msgstr "A monitorok frissítése sikertelen."
 msgid "Failed: {0}"
 msgstr "Sikertelen: {0}"
 
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "Fan control output (%)"
+msgstr "Ventilátorvezérlő kimenet (%)"
+
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
 msgstr "Ventilátorok"
@@ -1734,6 +1738,10 @@ msgstr "Nyilvános kulcs"
 #: src/components/add-system.tsx
 msgid "Public Key"
 msgstr "Nyilvános kulcs"
+
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "PWM output"
+msgstr "PWM-kimenet"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"

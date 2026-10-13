@@ -1034,6 +1034,10 @@ msgstr "Det gick inte att uppdatera monitorer."
 msgid "Failed: {0}"
 msgstr "Misslyckades: {0}"
 
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "Fan control output (%)"
+msgstr "Styrsignal för fläkt (%)"
+
 #: src/components/routes/system/charts/sensor-charts.tsx
 msgid "Fans"
 msgstr "Fläktar"
@@ -1734,6 +1738,10 @@ msgstr "Publik nyckel"
 #: src/components/add-system.tsx
 msgid "Public Key"
 msgstr "Offentlig nyckel"
+
+#: src/components/routes/system/charts/pwm-chart.tsx
+msgid "PWM output"
+msgstr "PWM-utgång"
 
 #: src/components/routes/system/disk-io-sheet.tsx
 msgctxt "Disk I/O average queue depth"
